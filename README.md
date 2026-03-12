@@ -1,2 +1,2 @@
-# IT2A_databaze
-Nevim, asi databáze
+# Databáze
+## 2025.3.12
