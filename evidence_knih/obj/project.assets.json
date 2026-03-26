@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Programování\\VStudio\\C#\\26_03_18\\evidence_knih\\evidence_knih\\evidence_knih.csproj",
-      "projectName": "evidence_knih",
-      "projectPath": "H:\\Programování\\VStudio\\C#\\26_03_18\\evidence_knih\\evidence_knih\\evidence_knih.csproj",
+      "projectUniqueName": "H:\\Programování\\VStudio\\C#\\26_03_18\\evidence_knih\\evidence_knih\\Evidence.csproj",
+      "projectName": "Evidence",
+      "projectPath": "H:\\Programování\\VStudio\\C#\\26_03_18\\evidence_knih\\evidence_knih\\Evidence.csproj",
       "packagesPath": "C:\\Users\\61794drapal\\.nuget\\packages\\",
       "outputPath": "H:\\Programování\\VStudio\\C#\\26_03_18\\evidence_knih\\evidence_knih\\obj\\",
       "projectStyle": "PackageReference",

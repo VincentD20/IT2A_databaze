@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("evidence_knih")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Evidence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd40df0dffa612f2c656a048c1830e4cf9e0b837")]
-[assembly: System.Reflection.AssemblyProductAttribute("evidence_knih")]
-[assembly: System.Reflection.AssemblyTitleAttribute("evidence_knih")]
+[assembly: System.Reflection.AssemblyProductAttribute("Evidence")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Evidence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

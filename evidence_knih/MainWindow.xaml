@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:evidence_knih"
         mc:Ignorable="d"
-        Title="Evidence knih" 
+        Title="Evidence cviků" 
         Height="480" 
         Width="880"
         WindowStartupLocation="CenterScreen">
@@ -17,7 +17,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- Datagrid – seznam knih -->
-        <DataGrid x:Name="BooksDataGrid"
+        <DataGrid x:Name="SkillsDataGrid"
                   Grid.Column="0"
                   Margin="0,0,12,0"
                   AutoGenerateColumns="False"
@@ -29,12 +29,12 @@
                   HorizontalGridLinesBrush="#E0E0E0">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Název"    Binding="{Binding Title}"    Width="*"     MinWidth="160"/>
-                <DataGridTextColumn Header="Autor"    Binding="{Binding Author}"   Width="*"     MinWidth="140"/>
-                <DataGridTextColumn Header="Žánr"     Binding="{Binding Zanr}"     Width="*" MinWidth="70"/>
-                <DataGridTextColumn Header="Rok"      Binding="{Binding RokVydani}" Width="*" MinWidth="40"/>
-                <DataGridTextColumn Header="Ks"       Binding="{Binding PocetKusu}" Width="*" MinWidth="30"/>
-                <DataGridCheckBoxColumn Header="Ds" Binding="{Binding Dostupnost}" Width="*" MinWidth="20"/>
+                <DataGridTextColumn Header="Název"    Binding="{Binding Nazev}"    Width="*"     MinWidth="100"/>
+                <DataGridTextColumn Header="Kategorie"    Binding="{Binding Kategorie}"   Width="*"     MinWidth="100"/>
+                <DataGridTextColumn Header="Obtížnost"     Binding="{Binding Obtiznost}"     Width="*" MinWidth="80"/>
+                <DataGridTextColumn Header="Počet týdnů"      Binding="{Binding Tydny}" Width="*" MinWidth="80"/>
+                <DataGridTextColumn Header="Poznámka"       Binding="{Binding Poznamka}" Width="*" MinWidth="100"/>
+                <DataGridCheckBoxColumn Header="Zvládnuto" Binding="{Binding Splneno}" Width="*" MinWidth="20"/>
             </DataGrid.Columns>
         </DataGrid>
 
@@ -48,32 +48,34 @@
 
             <StackPanel>
 
-                <TextBlock Text="Knihy" 
+                <TextBlock Text="Skills" 
                            FontWeight="SemiBold" 
                            FontSize="16" 
                            Margin="0,0,0,16"/>
 
-                <Label Content="Název knihy" Margin="0,0,0,4"/>
-                <TextBox x:Name="TitleTextBox" Margin="0,0,0,12" MaxLength="150"/>
+                <Label Content="Název" Margin="0,0,0,4"/>
+                <TextBox x:Name="Nazev" MaxLength="150"/>
 
-                <Label Content="Autor" Margin="0,0,0,4"/>
-                <TextBox x:Name="AuthorTextBox" Margin="0,0,0,12" MaxLength="100"/>
+                <Label Content="Kategorie" Margin="0,0,0,4"/>
+                <TextBox x:Name="Kategorie" MaxLength="100"/>
 
-                <Label Content="Rok vydání" Margin="0,0,0,4"/>
-                <TextBox x:Name="YearTextBox" Margin="0,0,0,12" MaxLength="4"/>
+                <Label Content="Obtížnost" Margin="0,0,0,4"/>
+                <TextBox x:Name="Obtiznost" MaxLength="4"/>
 
-                <Label Content="Žánr" Margin="0,0,0,4"/>
-                <TextBox x:Name="GenreTextBox" Margin="0,0,0,12" MaxLength="80"/>
+                <Label Content="Počet týdnů" Margin="0,0,0,4"/>
+                <TextBox x:Name="Pocet_tydnu" MaxLength="80"/>
 
-                <Label Content="Počet kusů" Margin="0,0,0,4"/>
-                <TextBox x:Name="QuantityTextBox" Margin="0,0,0,20"/>
+                <Label Content="Poznámka" Margin="0,0,0,4"/>
+                <TextBox x:Name="Poznamka" MaxLength="80"/>
+
+                <Label Content="Zvládnuto" Margin="0,0,0,4"/>
+                <CheckBox x:Name="Splneno" Margin="0,0,0,12"/>
 
                 <!-- Tlačítka vedle sebe -->
-                <UniformGrid Rows="1" HorizontalAlignment="Right" Width="266">
+                <UniformGrid Rows="1" HorizontalAlignment="Stretch">
                     <Button x:Name="BtnAdd"    Content="Přidat"    Width="Auto" Margin="0,0,8,0" Click="BtnAdd_Click"/>
-                    <Button x:Name="BtnEdit"   Content="Upravit"   Width="Auto" Margin="0,0,8,0" Click="BtnEdit_Click"   IsEnabled="False"/>
-                    <Button x:Name="BtnDelete" Content="Smazat"    Width="80
-                            " Margin="0,0,8,0" Click="BtnDelete_Click" IsEnabled="False"/>
+                    <Button x:Name="BtnEdit"   Content="Upravit"   Width="Auto" Margin="0,0,8,0" Click="BtnEdit_Click"   />
+                    <Button x:Name="BtnDelete" Content="Smazat"    Width="Auto" Margin="0,0,8,0" Click="BtnDelete_Click" />
                 </UniformGrid>
 
             </StackPanel>
