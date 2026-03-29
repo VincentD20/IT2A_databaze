@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +25,5 @@ namespace evidence_knih
             this.Poznamka = poznamka;
             this.Splneno = zvladnuto;
         }
-    }
+}
 }

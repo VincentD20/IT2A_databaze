@@ -66,7 +66,7 @@
                 <TextBox x:Name="Pocet_tydnu" MaxLength="80"/>
 
                 <Label Content="Poznámka" Margin="0,0,0,4"/>
-                <TextBox x:Name="Poznamka" MaxLength="80"/>
+                <TextBox x:Name="Poznamka" MaxLength="80" />
 
                 <Label Content="Zvládnuto" Margin="0,0,0,4"/>
                 <CheckBox x:Name="Splneno" Margin="0,0,0,12"/>
