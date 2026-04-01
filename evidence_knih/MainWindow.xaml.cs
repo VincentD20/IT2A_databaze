@@ -37,6 +37,8 @@ namespace evidence_knih
             Poznamka.Text = "";
             Splneno.IsChecked = false;
 
+            SkillsDataGrid.Items.Refresh();
+
         }
 
         private void BtnEdit_Click(object sender, RoutedEventArgs e)
@@ -92,11 +94,13 @@ namespace evidence_knih
                 return;
             }
             cviky.Remove(vybrany);
+            SkillsDataGrid.Items.Refresh();
         }
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)
         {
             cviky.Clear();
+            SkillsDataGrid.Items.Refresh();
         }
     }
 }
